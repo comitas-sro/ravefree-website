@@ -14,11 +14,15 @@ export default function Home() {
     <>
       <Image
         className={`${styles.banner} ${styles.mobileBanner}`}
+        fetchPriority="high"
+        loading="eager"
         src={mobile_banner}
         alt="Banner"
         />
       <Image
         className={`${styles.banner} ${styles.pcBanner}`}
+        fetchPriority="high"
+        loading="eager"
         src={pc_banner}
         alt="Banner"
         />
