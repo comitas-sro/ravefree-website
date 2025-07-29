@@ -36,6 +36,7 @@ export default function Home() {
           marginWidth={0}
           marginHeight={0}
           allowFullScreen
+          title="Registráčny formulár"
         >
         </iframe>
       </div>
