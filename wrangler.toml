@@ -1,0 +1,8 @@
+compatibility_date = "2025-07-26"
+name = "ravefree-website"
+preview_urls = true
+workers_dev = true
+
+[assets]
+directory = "out"
+not_found_handling = "404-page"
