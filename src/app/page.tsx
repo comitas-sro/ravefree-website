@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 
-import mobile_banner from "./mobile-banner.png";
-import pc_banner from "./pc-banner.png";
+import mobile_banner from "./mobile-banner.webp";
+import pc_banner from "./pc-banner.webp";
 import styles from "./page.module.css";
 
 export const metadata: Metadata = {
