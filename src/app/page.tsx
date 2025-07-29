@@ -30,6 +30,7 @@ export default function Home() {
         <h1>Registrácia pre vstup zdarma</h1>
         <iframe
           className={styles.form}
+          loading="lazy"
           src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=egtGmlDYeUKxxu4-_TVj3xOnwCQn8N5PhN8vGOobWQ5UOFdaUTM3N09ROEtTUkFHQktBS0ZMSVlFQy4u&embed=true"
           frameBorder="0"
           marginWidth={0}
