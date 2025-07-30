@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
+import Image from "next-export-optimize-images/image";
 
 import mobile_banner from "./mobile-banner.webp";
 import pc_banner from "./pc-banner.webp";
@@ -15,6 +15,7 @@ export default function Home() {
       <Image
         className={`${styles.banner} ${styles.mobileBanner}`}
         fetchPriority="high"
+        layout="responsive"
         loading="eager"
         src={mobile_banner}
         alt="Banner"
@@ -22,6 +23,7 @@ export default function Home() {
       <Image
         className={`${styles.banner} ${styles.pcBanner}`}
         fetchPriority="high"
+        layout="responsive"
         loading="eager"
         src={pc_banner}
         alt="Banner"
