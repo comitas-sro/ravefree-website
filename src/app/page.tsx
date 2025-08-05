@@ -33,7 +33,7 @@ export default function Home() {
         <iframe
           className={styles.form}
           loading="lazy"
-          src="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=egtGmlDYeUKxxu4-_TVj3xOnwCQn8N5PhN8vGOobWQ5UOFdaUTM3N09ROEtTUkFHQktBS0ZMSVlFQy4u&embed=true"
+          src="https://tally.so/embed/mV686M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
           frameBorder="0"
           marginWidth={0}
           marginHeight={0}
