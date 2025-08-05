@@ -20,11 +20,9 @@
 
 .form {
   border: none;
-  max-height: 100vh;
   width: 100%;
-  /* The form is not shown in the iframe if it's not at least 320x320 px. */
   min-width: 320px;
-  min-height: 320px;
+  min-height: 280px;
 }
 
 .formContainer {
