@@ -7,7 +7,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sk" className="dark">
+    <html lang="sk" className='dark'>
       <body>
         <main>{children}</main>
         <Footer />
