@@ -28,7 +28,7 @@ export default function Home() {
         src={pc_banner}
         alt="Banner"
         />
-      <div className={styles.formContainer}>
+      <div className="site-container">
         <h1>Registrácia pre vstup zdarma</h1>
         <iframe
           className={styles.form}
