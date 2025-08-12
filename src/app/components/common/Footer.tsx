@@ -21,7 +21,7 @@ export function Footer() {
       <footer className="site-container m-auto w-full pb-6">
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
-            <h3 className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</h3>
+            <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
             <FooterLink
               href="https://www.instagram.com/"
               isExternal
@@ -36,9 +36,9 @@ export function Footer() {
             </FooterLink>
           </div>
           <div className="flex flex-col">
-            <h3 className="mt-6 mb-2 text-lg font-semibold">
+            <p className="mt-6 mb-2 text-lg font-semibold">
               Právne informácie a kontakt
-            </h3>
+            </p>
             <FooterLink href="obchodne-podmienky.html">
               Obchodné podmienky
             </FooterLink>
