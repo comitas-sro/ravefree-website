@@ -22,6 +22,7 @@ export default function Home() {
       />
       <video
         autoPlay
+        playsInline
         loop
         muted
         width="600"
