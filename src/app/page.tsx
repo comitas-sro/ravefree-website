@@ -25,7 +25,8 @@ export default function Home() {
         playsInline
         loop
         muted
-        width="600"
+        width={600}
+        height={600}
         className="m-auto -mt-10 md:-mt-20"
       >
         <source src="/banner.webm" type="video/webm" />
