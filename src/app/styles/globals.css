@@ -1,3 +1,8 @@
+/**
+ * Slightly reduced version copied from the Astro Galaxy 6.2.2 theme. To enforce
+ * dark mode within the iframe, the root colors are hard-coded to dark-mode
+ * equivalents.
+ */
 @import 'tailwindcss';
 
 @import './tailwind-theme.css';
