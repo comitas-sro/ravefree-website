@@ -37,6 +37,10 @@ export default function Home() {
         src={genesis}
         alt="Genesis"
       />
+      <p className='text-[24px] leading-none mt-2'>06/12/25</p>
+      <p className='text-[39px] leading-none'>A4 STUDIO</p>
+      <p className='text-[18px] leading-none'>BRATISLAVA SLOVAKIA</p>
+      <p className='text-[24px] leading-none mt-2'>SIGN UP FOR FREE ENTRY</p>
       <SignUpForm />
     </div>
   );
