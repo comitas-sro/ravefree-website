@@ -32,17 +32,23 @@ export default function Home() {
         <source src="/banner.webm" type="video/webm" />
       </video>
       <Image
-        className='max-w-sm m-auto -mt-20 md:-mt-30 px-16 z-10 relative'
+        className="max-w-sm m-auto -mt-20 md:-mt-30 px-16 z-10 relative"
         fetchPriority="high"
         layout="responsive"
         loading="eager"
         src={genesis}
         alt="Genesis"
       />
-      <p className='text-[24px] leading-none mt-2'>06/12/25</p>
-      <p className='text-[39px] leading-none'>A4 STUDIO</p>
-      <p className='text-[18px] leading-none'>BRATISLAVA SLOVAKIA</p>
-      <p className='text-[24px] leading-none mt-2'>SIGN UP FOR FREE ENTRY</p>
+      <div className='max-w-sm m-auto z-10 relative'>
+        <p className="text-[24px] leading-none mt-2">06/12/25</p>
+        <p className="text-[39px] leading-none">A4 STUDIO</p>
+        <p className="text-[18px] leading-none">
+          BRATISLAVA SLOVAKIA
+        </p>
+        <p className="text-[24px] leading-none mt-2">
+          SIGN UP FOR FREE ENTRY
+        </p>
+      </div>
       <SignUpForm />
     </div>
   );
