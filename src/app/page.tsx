@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className='bg-linear-to-t from-[#20003A] to-zink-900 p-20'>
       <Image
         className='md:hidden'
         fetchPriority="high"
@@ -29,6 +29,6 @@ export default function Home() {
         alt="Banner"
       />
       <SignUpForm />
-    </>
+    </div>
   );
 }
