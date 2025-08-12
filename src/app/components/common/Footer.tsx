@@ -17,7 +17,7 @@ function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
 
 export function Footer() {
   return (
-    <div className="border-t-base-300 dark:border-t-base-600/60 mt-20 border-t">
+    <div className="border-t-base-300 dark:border-t-base-600/60 border-t">
       <footer className="site-container m-auto w-full pb-6">
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">

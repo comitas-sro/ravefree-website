@@ -1,8 +1,7 @@
 import type { Metadata } from 'next';
 import Image from 'next-export-optimize-images/image';
 
-import mobile_banner from './mobile-banner.webp';
-import pc_banner from './pc-banner.webp';
+import title from './title.webp';
 import { SignUpForm } from './components/common/SignUpForm';
 
 export const metadata: Metadata = {
@@ -11,24 +10,16 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
+    <div className='bg-linear-to-t from-[#20003A] to-zink-900 p-20'>
       <Image
-        className='md:hidden'
         fetchPriority="high"
         layout="responsive"
         loading="eager"
-        src={mobile_banner}
+        src={title}
         alt="Banner"
-      />
-      <Image
-        className='hidden md:block'
-        fetchPriority="high"
-        layout="responsive"
-        loading="eager"
-        src={pc_banner}
-        alt="Banner"
+        className='m-auto max-w-sm'
       />
       <SignUpForm />
-    </>
+    </div>
   );
 }
