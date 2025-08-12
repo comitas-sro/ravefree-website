@@ -6,12 +6,12 @@ import genesis from './genesis.webp';
 import { SignUpForm } from './components/common/SignUpForm';
 
 export const metadata: Metadata = {
-  title: 'Kontaktný formulár',
+  title: 'Contact form',
 };
 
 export default function Home() {
   return (
-    <div className="bg-linear-to-t from-[#20003A] to-black py-20">
+    <div className="bg-linear-to-t from-[#20003A] to-black py-20 text-center">
       <Image
         className="max-w-sm m-auto px-14 z-10 relative"
         fetchPriority="high"
