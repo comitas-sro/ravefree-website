@@ -22,10 +22,10 @@ export function Footer() {
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Social networks</p>
-            <FooterLink href="https://www.instagram.com/" isExternal>
+            <FooterLink href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr" isExternal>
               Instagram
             </FooterLink>
-            <FooterLink href="https://www.facebook.com/" isExternal>
+            <FooterLink href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr" isExternal>
               Facebook
             </FooterLink>
           </div>
