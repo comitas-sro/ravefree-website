@@ -7,6 +7,8 @@
 
 @import './tailwind-theme.css';
 
+@import "./markdown-content.css";
+
 @layer theme, base, components;
 
 @layer base {
@@ -43,14 +45,8 @@
       'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol';
 
-    font-family: 'Inter', var(--font-fallback);
+    font-family: 'Kanit', var(--font-fallback);
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  }
-
-  @supports (font-variation-settings: normal) {
-    :root {
-      font-family: 'InterVariable', var(--font-fallback);
-    }
   }
 
   * {
@@ -85,7 +81,7 @@
   }
 
   .description {
-    @apply text-base-700 dark:text-base-300 md:text-lg;
+    @apply text-base-300 md:text-lg;
   }
 
   .site-container {
