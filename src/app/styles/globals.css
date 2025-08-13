@@ -79,7 +79,7 @@
   }
 
   .description {
-    @apply text-base-700 dark:text-base-300 md:text-lg;
+    @apply text-base-300 md:text-lg;
   }
 
   .site-container {
