@@ -72,7 +72,7 @@ export function Footer() {
           </div>
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">
-              Legal information & contact
+              Legal information
             </p>
             <FooterLink href="/terms-and-conditions">
               Terms and Conditions
