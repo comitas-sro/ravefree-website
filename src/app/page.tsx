@@ -7,7 +7,7 @@ import genesis from './genesis.webp';
 import { SignUpForm } from './components/common/SignUpForm';
 
 export const metadata: Metadata = {
-  title: 'Contact form',
+  title: 'Sign up | RAVE FREE',
 };
 
 export default function Home() {
