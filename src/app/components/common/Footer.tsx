@@ -1,4 +1,6 @@
 import { ComponentProps } from 'react';
+import { InstagramIcon } from '../icons/InstagramIcon';
+import { FacebookIcon } from '../icons/FacebookIcon';
 
 interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
   isExternal?: boolean;
@@ -7,7 +9,7 @@ interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
 function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
   return (
     <a
-      className="text-base-400 hover:text-base-100 mr-auto transition"
+      className="text-base-400 hover:text-base-100 transition"
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       {...props}
@@ -22,18 +24,20 @@ export function Footer() {
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
-            <FooterLink
-              href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
-              isExternal
-            >
-              Instagram
-            </FooterLink>
-            <FooterLink
-              href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
-              isExternal
-            >
-              Facebook
-            </FooterLink>
+            <div className='flex gap-2'>
+              <FooterLink
+                href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
+                isExternal
+              >
+                <InstagramIcon />
+              </FooterLink>
+              <FooterLink
+                href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
+                isExternal
+              >
+                <FacebookIcon />
+              </FooterLink>
+            </div>
           </div>
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">
