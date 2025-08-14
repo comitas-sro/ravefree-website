@@ -43,14 +43,8 @@
       'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol';
 
-    font-family: 'Inter', var(--font-fallback);
+    font-family: 'Kanit', var(--font-fallback);
     font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
-  }
-
-  @supports (font-variation-settings: normal) {
-    :root {
-      font-family: 'InterVariable', var(--font-fallback);
-    }
   }
 
   * {
