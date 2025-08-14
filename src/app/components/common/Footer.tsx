@@ -7,7 +7,7 @@ interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
 function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
   return (
     <a
-      className="text-base-900 hover:text-base-600 dark:text-base-400 dark:hover:text-base-100 mr-auto transition"
+      className="text-base-400 hover:text-base-100 mr-auto transition"
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       {...props}
@@ -17,7 +17,7 @@ function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
 
 export function Footer() {
   return (
-    <div className="border-t-base-300 dark:border-t-base-600/60 mt-20 border-t">
+    <div className="border-t-base-600/60 mt-20 border-t">
       <footer className="site-container m-auto w-full pb-6">
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
@@ -48,8 +48,8 @@ export function Footer() {
             <FooterLink href="kontakt.html">Kontakt</FooterLink>
           </div>
         </div>
-        <hr className="border-base-300 dark:border-base-600/60 my-6" />
-        <div className="text-base-600 dark:text-base-100/60 text-sm">
+        <hr className="border-base-600/60 my-6" />
+        <div className="text-base-100/60 text-sm">
           © 2025 RAVE FREE. All rights reserved.
         </div>
       </footer>
