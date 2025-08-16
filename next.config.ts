@@ -1,9 +1,10 @@
 import path from "node:path";
 
+import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
 import withExportImages from "next-export-optimize-images";
 
-const nextConfig: Promise<NextConfig> = withExportImages({
+const nextConfig: NextConfig = {
   experimental: {
     // At the time of writing, Next.js doesn't inline critical-path CSS and
     // since there's so little CSS, we can inline it all.
@@ -11,6 +12,7 @@ const nextConfig: Promise<NextConfig> = withExportImages({
     typedRoutes: true,
   },
   output: "export",
+  pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   trailingSlash: true,
   webpack(config, context) {
     const fileLoaderRule = config.module.rules.find((rule: any) =>
@@ -49,6 +51,10 @@ const nextConfig: Promise<NextConfig> = withExportImages({
 
     return config;
   },
+};
+
+const withMDX = createMDX({
+  extension: /\.mdx?$/,
 });
 
-export default nextConfig;
+export default withExportImages(withMDX(nextConfig));
