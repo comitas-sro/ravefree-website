@@ -31,12 +31,14 @@ export function Footer() {
               <FooterLink
                 href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
                 isExternal
+                title="Instagram"
               >
                 <InstagramIcon />
               </FooterLink>
               <FooterLink
                 href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
                 isExternal
+                title="Facebook"
               >
                 <FacebookIcon />
               </FooterLink>
