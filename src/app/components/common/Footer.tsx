@@ -23,13 +23,13 @@ export function Footer() {
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
             <FooterLink
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
               isExternal
             >
               Instagram
             </FooterLink>
             <FooterLink
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
               isExternal
             >
               Facebook
