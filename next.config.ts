@@ -1,5 +1,7 @@
-import type { NextConfig } from 'next';
-import withExportImages from 'next-export-optimize-images';
+import path from "node:path";
+
+import type { NextConfig } from "next";
+import withExportImages from "next-export-optimize-images";
 
 const nextConfig: Promise<NextConfig> = withExportImages({
   experimental: {
@@ -8,13 +10,22 @@ const nextConfig: Promise<NextConfig> = withExportImages({
     inlineCss: true,
     typedRoutes: true,
   },
-  output: 'export',
+  output: "export",
   trailingSlash: true,
-  webpack: (config) => {
+  webpack: (config, context) => {
     config.module.rules.push({
-      test: /\.webm/,
-      type: 'asset/resource',
+      test: /\.webm$/i,
+      type: "asset/resource",
+      generator: {
+        // If the files are only used by server components, they end up in
+        // `.next/server/{chunks,}/static/media`, which isn't copied to the
+        // output directory.
+        outputPath: context.isServer
+          ? path.join("..", context.dev ? "" : "..")
+          : "",
+      },
     });
+
     return config;
   },
 });
