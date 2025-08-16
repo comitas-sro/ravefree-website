@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next-export-optimize-images/image';
 
 import video_banner_fallback from './video-banner-fallback.webp';
+import video_banner from './video-banner.webm';
 import banner from './banner.webp';
 import genesi from './genesi.webp';
 import { SignUpForm } from './components/common/SignUpForm';
@@ -30,7 +31,7 @@ export default function Home() {
         height={600}
         className="m-auto"
       >
-        <source src="/video-banner.webm" type="video/webm" />
+        <source src={video_banner} type="video/webm" />
         <Image
           className="max-w-sm m-auto px-14"
           fetchPriority="high"

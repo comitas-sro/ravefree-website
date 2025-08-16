@@ -1,5 +1,5 @@
-import type { NextConfig } from "next";
-import withExportImages from "next-export-optimize-images";
+import type { NextConfig } from 'next';
+import withExportImages from 'next-export-optimize-images';
 
 const nextConfig: Promise<NextConfig> = withExportImages({
   experimental: {
@@ -10,6 +10,13 @@ const nextConfig: Promise<NextConfig> = withExportImages({
   },
   output: 'export',
   trailingSlash: true,
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.webm/,
+      type: 'asset/resource',
+    });
+    return config;
+  },
 });
 
 export default nextConfig;
