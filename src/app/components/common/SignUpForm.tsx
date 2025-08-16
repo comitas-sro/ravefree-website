@@ -1,6 +1,6 @@
 export function SignUpForm() {
   return (
-    <div className="site-container flex justify-center mt-24 md:mt-36">
+    <div id="sign-up" className="site-container flex justify-center pt-24">
       <div
         className="group max-w-xl relative h-full w-full rounded-2xl bg-gradient-to-br
 from-primary-500 via-base-300/50 to-base-300/50

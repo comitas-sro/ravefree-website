@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
       <Image
-        className='md:hidden'
+        className="md:hidden"
         fetchPriority="high"
         layout="responsive"
         loading="eager"
@@ -21,7 +21,7 @@ export default function Home() {
         alt="Banner"
       />
       <Image
-        className='hidden md:block'
+        className="hidden md:block"
         fetchPriority="high"
         layout="responsive"
         loading="eager"

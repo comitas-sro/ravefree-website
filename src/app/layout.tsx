@@ -1,4 +1,5 @@
 import { Footer } from './components/common/Footer';
+import { Header } from './components/common/Header';
 import { Kanit } from 'next/font/google';
 import './styles/globals.css';
 
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="sk" className={kanit.className}>
       <body>
+        <Header />
         <main>{children}</main>
         <Footer />
       </body>
