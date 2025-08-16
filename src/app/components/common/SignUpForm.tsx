@@ -10,13 +10,13 @@ after:absolute after:rounded-[calc(1rem-1px)] after:bg-base-800/50 after:inset-[
           <div className="bg-base-800 flex flex-col gap-5 rounded-xl px-4 py-10">
             <h1 className="h2 text-center">Registrácia pre vstup zdarma</h1>
             <iframe
-              className="w-full min-h-[280px] mx-auto flex max-w-sm flex-col"
+              className="w-full min-h-[700px] mx-auto flex max-w-sm flex-col"
               loading="lazy"
-              src="https://tally.so/embed/mV686M?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+              src="https://tally.so/embed/3qljk9?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1&formEventsForwarding=1"
               frameBorder="0"
               marginWidth={0}
               marginHeight={0}
-              title="Registráčny formulár"
+              title="Sign up form"
             />
           </div>
         </div>
