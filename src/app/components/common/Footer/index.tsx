@@ -1,6 +1,9 @@
 import { ComponentProps } from 'react';
-import { InstagramIcon } from '../icons/InstagramIcon';
-import { FacebookIcon } from '../icons/FacebookIcon';
+
+import styles from './styles.module.css';
+
+import FacebookIcon from './facebook.svg';
+import InstagramIcon from './instagram.svg';
 
 interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
   isExternal?: boolean;
@@ -9,7 +12,7 @@ interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
 function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
   return (
     <a
-      className="text-base-400 hover:text-base-100 transition"
+      className={`text-base-400 hover:text-base-100 transition ${styles.link}`}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       {...props}
