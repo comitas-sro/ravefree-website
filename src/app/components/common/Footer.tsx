@@ -1,17 +1,20 @@
+import Link, { LinkProps } from 'next/link';
 import { ComponentProps } from 'react';
 
-interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
-  isExternal?: boolean;
-}
-
-function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
+function ExternalFooterLink(props: Omit<ComponentProps<'a'>, 'className'>) {
   return (
     <a
       className="text-base-400 hover:text-base-100 mr-auto transition"
-      target={isExternal ? '_blank' : undefined}
-      rel={isExternal ? 'noopener noreferrer' : undefined}
+      target="_blank"
+      rel="noopener noreferrer"
       {...props}
     />
+  );
+}
+
+function FooterLink<T>(props: Omit<LinkProps<T>, 'className'>) {
+  return (
+    <Link className="text-base-400 hover:text-base-100 transition" {...props} />
   );
 }
 
@@ -22,30 +25,19 @@ export function Footer() {
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
-            <FooterLink
-              href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
-              isExternal
-            >
+            <ExternalFooterLink href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr">
               Instagram
-            </FooterLink>
-            <FooterLink
-              href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
-              isExternal
-            >
+            </ExternalFooterLink>
+            <ExternalFooterLink href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr">
               Facebook
-            </FooterLink>
+            </ExternalFooterLink>
           </div>
           <div className="flex flex-col">
-            <p className="mt-6 mb-2 text-lg font-semibold">
-              Právne informácie a kontakt
-            </p>
-            <FooterLink href="obchodne-podmienky.html">
-              Obchodné podmienky
+            <p className="mt-6 mb-2 text-lg font-semibold">Legal information</p>
+            <FooterLink href="/terms-and-conditions">
+              Terms and conditions
             </FooterLink>
-            <FooterLink href="ochrana-osobnych-udajov.html">
-              Ochrana osobných údajov
-            </FooterLink>
-            <FooterLink href="kontakt.html">Kontakt</FooterLink>
+            <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
           </div>
         </div>
         <hr className="border-base-600/60 my-6" />
