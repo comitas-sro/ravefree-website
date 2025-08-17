@@ -13,7 +13,7 @@ export function Header() {
                     href="/#sign-up"
                     className="hidden whitespace-nowrap md:flex button group button--primary"
                   >
-                    Sign up for free
+                    Sign Up for Free
                   </Link>
                 </li>
               </ul>

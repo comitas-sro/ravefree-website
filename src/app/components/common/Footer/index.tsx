@@ -26,7 +26,7 @@ export function Footer() {
       <footer className="site-container m-auto w-full pb-6">
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
-            <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
+            <p className="mt-6 mb-2 text-lg font-semibold">Follow Us</p>
             <div className='flex gap-2'>
               <FooterLink
                 href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
@@ -46,15 +46,14 @@ export function Footer() {
           </div>
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">
-              Právne informácie a kontakt
+              Legal Information
             </p>
-            <FooterLink href="obchodne-podmienky.html">
-              Obchodné podmienky
+            <FooterLink href="/terms-and-conditions">
+              Terms and Conditions
             </FooterLink>
-            <FooterLink href="ochrana-osobnych-udajov.html">
-              Ochrana osobných údajov
+            <FooterLink href="/privacy-policy">
+              Privacy Policy
             </FooterLink>
-            <FooterLink href="kontakt.html">Kontakt</FooterLink>
           </div>
         </div>
         <hr className="border-base-600/60 my-6" />

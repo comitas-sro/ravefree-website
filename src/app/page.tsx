@@ -8,7 +8,7 @@ import genesi from './genesi.webp';
 import { SignUpForm } from './components/common/SignUpForm';
 
 export const metadata: Metadata = {
-  title: 'Kontaktný formulár',
+  title: 'Sign Up',
 };
 
 export default function Home() {

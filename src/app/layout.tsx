@@ -14,7 +14,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="sk" className={kanit.className}>
+    <html lang="en" className={kanit.className}>
       <body>
         <Header />
         <main>{children}</main>
