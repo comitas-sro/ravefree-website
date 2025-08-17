@@ -5,7 +5,7 @@ import video_banner_fallback from './video-banner-fallback.webp';
 import video_banner from './video-banner.webm';
 import banner from './banner.webp';
 import genesi from './genesi.webp';
-import { SignUpForm } from './components/common/SignUpForm';
+import { SignUpForm } from '../components/common/SignUpForm';
 
 export const metadata: Metadata = {
   title: 'Sign Up',
