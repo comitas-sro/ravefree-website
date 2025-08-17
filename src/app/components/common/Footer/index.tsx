@@ -1,3 +1,4 @@
+import Link, { LinkProps } from 'next/link';
 import { ComponentProps } from 'react';
 
 import styles from './styles.module.css';
@@ -5,18 +6,24 @@ import styles from './styles.module.css';
 import FacebookIcon from './facebook.svg';
 import InstagramIcon from './instagram.svg';
 
-interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
-  isExternal?: boolean;
-}
+const commonLinkAttrs = {
+  className: `text-base-400 hover:text-base-100 transition ${styles.link}`,
+};
 
-function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
+function ExternalFooterLink(props: Omit<ComponentProps<'a'>, 'className'>) {
   return (
     <a
-      className={`text-base-400 hover:text-base-100 transition ${styles.link}`}
-      target={isExternal ? '_blank' : undefined}
-      rel={isExternal ? 'noopener noreferrer' : undefined}
+      {...commonLinkAttrs}
+      rel="noopener noreferrer"
+      target="_blank"
       {...props}
     />
+  );
+}
+
+function FooterLink<T>(props: Omit<LinkProps<T>, 'className'>) {
+  return (
+    <Link {...commonLinkAttrs} {...props} />
   );
 }
 
@@ -28,20 +35,18 @@ export function Footer() {
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Follow Us</p>
             <div className='flex gap-2'>
-              <FooterLink
+              <ExternalFooterLink
                 href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
-                isExternal
                 title="Instagram"
               >
                 <InstagramIcon />
-              </FooterLink>
-              <FooterLink
+              </ExternalFooterLink>
+              <ExternalFooterLink
                 href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
-                isExternal
                 title="Facebook"
               >
                 <FacebookIcon />
-              </FooterLink>
+              </ExternalFooterLink>
             </div>
           </div>
           <div className="flex flex-col">
