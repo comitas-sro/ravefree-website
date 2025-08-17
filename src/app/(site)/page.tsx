@@ -49,6 +49,12 @@ export default function Home() {
         src={genesi}
         alt="GENESI[IT]"
       />
+      <div className="max-w-sm m-auto text-center">
+        <p className="text-[24px] leading-none mt-2">06/12/25</p>
+        <p className="text-[39px] leading-none">A4 STUDIO</p>
+        <p className="text-[18px] leading-none">BRATISLAVA SLOVAKIA</p>
+        <p className="text-[24px] leading-none mt-2">SIGN UP FOR FREE ENTRY</p>
+      </div>
       <SignUpForm />
     </div>
   );
