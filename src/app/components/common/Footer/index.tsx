@@ -1,5 +1,10 @@
 import { ComponentProps } from 'react';
 
+import styles from './styles.module.css';
+
+import FacebookIcon from './facebook.svg';
+import InstagramIcon from './instagram.svg';
+
 interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
   isExternal?: boolean;
 }
@@ -7,7 +12,7 @@ interface FooterLinkProps extends Omit<ComponentProps<'a'>, 'className'> {
 function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
   return (
     <a
-      className="text-base-400 hover:text-base-100 mr-auto transition"
+      className={`text-base-400 hover:text-base-100 transition ${styles.link}`}
       target={isExternal ? '_blank' : undefined}
       rel={isExternal ? 'noopener noreferrer' : undefined}
       {...props}
@@ -17,23 +22,27 @@ function FooterLink({ isExternal = false, ...props }: FooterLinkProps) {
 
 export function Footer() {
   return (
-    <div className="border-t-base-600/60 mt-20 border-t">
+    <div className="border-t-base-600/60 border-t">
       <footer className="site-container m-auto w-full pb-6">
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Sociálne siete</p>
-            <FooterLink
-              href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
-              isExternal
-            >
-              Instagram
-            </FooterLink>
-            <FooterLink
-              href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
-              isExternal
-            >
-              Facebook
-            </FooterLink>
+            <div className='flex gap-2'>
+              <FooterLink
+                href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
+                isExternal
+                title="Instagram"
+              >
+                <InstagramIcon />
+              </FooterLink>
+              <FooterLink
+                href="https://www.facebook.com/share/1Ys38N6RKo/?mibextid=wwXIfr"
+                isExternal
+                title="Facebook"
+              >
+                <FacebookIcon />
+              </FooterLink>
+            </div>
           </div>
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">
