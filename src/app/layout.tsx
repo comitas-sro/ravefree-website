@@ -6,6 +6,8 @@ import { Header } from './components/common/Header';
 
 import './styles/globals.css';
 
+import icon_svg from './_icon.svg?url';
+
 const kanit = Kanit({
   weight: ["400", "500"],
   subsets: ["latin"]
@@ -27,6 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={kanit.className}>
+      <head>
+        {/* Automatic icon isn't used to make sure it's cached properly. */}
+        <link href={icon_svg.src} rel="icon" sizes="any" type="image/svg+xml"/>
+      </head>
       <body>
         <Header />
         <main>{children}</main>
