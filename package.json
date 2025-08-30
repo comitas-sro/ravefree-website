@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build --no-lint && next-export-optimize-images",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "concurrently -m 1 'npm run lint:eslint' 'npm run lint:typescript'",
+    "lint:eslint": "eslint --concurrency auto",
+    "lint:typescript": "next typegen && tsc"
   },
   "dependencies": {
     "@mdx-js/loader": "^3.1.0",
@@ -26,6 +28,7 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
     "postcss": "^8.5.6",
