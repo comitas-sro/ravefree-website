@@ -14,21 +14,21 @@ updates:
         update-types:
           - version-update:semver-patch
     groups:
-      MDX:
+      mdx:
         patterns:
           - '@mdx-js/*'
-      Next.js:
+      nextjs:
         patterns:
           - '@next/*'
           - eslint-config-next
           - next
-      React:
+      react:
         patterns:
           - '@types/react'
           - '@types/react-dom'
           - react
           - react-dom
-      Tailwind CSS:
+      tailwindcss:
         patterns:
           - '@tailwindcss/*'
           - tailwindcss
@@ -42,7 +42,7 @@ updates:
           - version-update:semver-major
           - version-update:semver-minor
     groups:
-      All Packages:
+      all-packages:
         patterns:
           - '*'
     # Makes it possible to have another config. for the same dir.
