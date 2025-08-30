@@ -1,6 +1,7 @@
 import { dirname } from "path";
 import { fileURLToPath } from "url";
 import { FlatCompat } from "@eslint/eslintrc";
+import * as mdx from "eslint-plugin-mdx";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -21,6 +22,14 @@ const eslintConfig = [
     ],
   },
   ...compat.extends("next/core-web-vitals", "next/typescript"),
+  {
+    ...mdx.flat,
+    files: ["**/*.mdx"],
+  },
+  {
+    ...mdx.flatCodeBlocks,
+    files: ["**/*.mdx"],
+  },
   eslintPluginPrettierRecommended,
 ];
 
