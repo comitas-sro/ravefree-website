@@ -6,9 +6,9 @@ import withExportImages from "next-export-optimize-images";
 
 const nextConfig: NextConfig = {
   experimental: {
-    // At the time of writing, Next.js doesn't inline critical-path CSS and
-    // since there's so little CSS, we can inline it all.
-    inlineCss: true,
+    // Works only with Pages Router.
+    // https://github.com/vercel/next.js/discussions/59989#discussioncomment-7962270
+    optimizeCss: true,
   },
   output: "export",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],

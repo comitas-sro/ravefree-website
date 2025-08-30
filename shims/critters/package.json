@@ -1,0 +1,6 @@
+{
+  "name": "critters",
+  "type": "module",
+  "main": "./index.cjs",
+  "exports": "./index.cjs"
+}
