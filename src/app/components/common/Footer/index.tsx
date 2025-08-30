@@ -1,16 +1,16 @@
-import Link, { LinkProps } from 'next/link';
-import { ComponentProps } from 'react';
+import Link, { LinkProps } from "next/link";
+import { ComponentProps } from "react";
 
-import styles from './styles.module.css';
+import styles from "./styles.module.css";
 
-import FacebookIcon from './facebook.svg';
-import InstagramIcon from './instagram.svg';
+import FacebookIcon from "./facebook.svg";
+import InstagramIcon from "./instagram.svg";
 
 const commonLinkAttrs = {
   className: `text-base-400 hover:text-base-100 transition ${styles.link}`,
 };
 
-function ExternalFooterLink(props: Omit<ComponentProps<'a'>, 'className'>) {
+function ExternalFooterLink(props: Omit<ComponentProps<"a">, "className">) {
   return (
     <a
       {...commonLinkAttrs}
@@ -21,10 +21,8 @@ function ExternalFooterLink(props: Omit<ComponentProps<'a'>, 'className'>) {
   );
 }
 
-function FooterLink<T>(props: Omit<LinkProps<T>, 'className'>) {
-  return (
-    <Link {...commonLinkAttrs} {...props} />
-  );
+function FooterLink<T>(props: Omit<LinkProps<T>, "className">) {
+  return <Link {...commonLinkAttrs} {...props} />;
 }
 
 export function Footer() {
@@ -34,7 +32,7 @@ export function Footer() {
         <div className="flex w-full flex-col justify-end gap-4 sm:flex-row sm:gap-10">
           <div className="flex flex-col">
             <p className="mt-6 mb-2 text-lg font-semibold">Follow Us</p>
-            <div className='flex gap-2'>
+            <div className="flex gap-2">
               <ExternalFooterLink
                 href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
                 title="Instagram"
@@ -50,15 +48,11 @@ export function Footer() {
             </div>
           </div>
           <div className="flex flex-col">
-            <p className="mt-6 mb-2 text-lg font-semibold">
-              Legal Information
-            </p>
+            <p className="mt-6 mb-2 text-lg font-semibold">Legal Information</p>
             <FooterLink href="/terms-and-conditions">
               Terms and Conditions
             </FooterLink>
-            <FooterLink href="/privacy-policy">
-              Privacy Policy
-            </FooterLink>
+            <FooterLink href="/privacy-policy">Privacy Policy</FooterLink>
           </div>
         </div>
         <hr className="border-base-600/60 my-6" />

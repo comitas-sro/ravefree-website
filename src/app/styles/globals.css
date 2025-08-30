@@ -3,11 +3,11 @@
  * dark mode within the iframe, the root colors are hard-coded to dark-mode
  * equivalents.
  */
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @import "./markdown-content.css";
 
-@import './tailwind-theme.css';
+@import "./tailwind-theme.css";
 
 @import "./buttons.css";
 
@@ -43,12 +43,15 @@
 
     --radius: 0.5rem;
 
-    --font-fallback: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto',
-      'Helvetica', 'Arial', 'sans-serif', 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol';
+    --font-fallback:
+      "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica",
+      "Arial", "sans-serif", "Apple Color Emoji", "Segoe UI Emoji",
+      "Segoe UI Symbol";
 
-    font-family: 'Kanit', var(--font-fallback);
-    font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+    font-family: "Kanit", var(--font-fallback);
+    font-feature-settings:
+      "liga" 1,
+      "calt" 1; /* fix for Chrome */
   }
 
   * {

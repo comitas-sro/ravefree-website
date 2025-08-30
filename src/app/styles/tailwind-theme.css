@@ -43,8 +43,9 @@
   --breakpoint-2xl: 1536px;
 
   /* font families */
-  --font-mono: 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas',
-    'Liberation Mono', 'Courier New', 'monospace';
+  --font-mono:
+    "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono",
+    "Courier New", "monospace";
 
   /* starwind and cosmic themes animations */
   --animate-accordion-down: accordion-down 0.2s ease-out;

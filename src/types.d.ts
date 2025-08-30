@@ -1,3 +1,3 @@
-declare module '*.webm' {
+declare module "*.webm" {
   export default string;
 }

@@ -1,17 +1,17 @@
-import type { Metadata } from 'next';
-import { Kanit } from 'next/font/google';
+import type { Metadata } from "next";
+import { Kanit } from "next/font/google";
 
-import { Footer } from './components/common/Footer';
-import { Header } from './components/common/Header';
+import { Footer } from "./components/common/Footer";
+import { Header } from "./components/common/Header";
 
-import './styles/globals.css';
+import "./styles/globals.css";
 
-import icon_png from './_icon.png';
-import icon_svg from './_icon.svg?url';
+import icon_png from "./_icon.png";
+import icon_svg from "./_icon.svg?url";
 
 const kanit = Kanit({
   weight: ["400", "500"],
-  subsets: ["latin"]
+  subsets: ["latin"],
 });
 
 const siteName = "RAVE FREE";
@@ -38,7 +38,7 @@ export default function RootLayout({
           sizes={`${icon_png.width}x${icon_png.height}`}
           type="image/png"
         />
-        <link href={icon_svg.src} rel="icon" sizes="any" type="image/svg+xml"/>
+        <link href={icon_svg.src} rel="icon" sizes="any" type="image/svg+xml" />
       </head>
       <body>
         <Header />
