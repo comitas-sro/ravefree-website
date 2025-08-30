@@ -1,0 +1,46 @@
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: daily
+    open-pull-requests-limit: 10
+    ignore:
+      - dependency-name: '*'
+        update-types:
+          - version-update:semver-patch
+    groups:
+      mdx-js:
+        patterns:
+          - '@mdx-js/*'
+      next:
+        patterns:
+          - '@next/*'
+          - eslint-config-next
+          - next
+      react:
+        patterns:
+          - '@types/react'
+          - '@types/react-dom'
+          - react
+          - react-dom
+      tailwindcss:
+        patterns:
+          - '@tailwindcss/*'
+          - tailwindcss
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: monthly
+    ignore:
+      - dependency-name: '*'
+        update-types:
+          - version-update:semver-major
+          - version-update:semver-minor
+    groups:
+      all:
+        patterns:
+          - '*'
+    # Makes it possible to have another config. for the same dir.
+    # https://github.com/dependabot/dependabot-core/issues/1778#issuecomment-1988140219
+    target-branch: main
