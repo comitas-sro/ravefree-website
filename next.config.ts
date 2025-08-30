@@ -9,11 +9,11 @@ const nextConfig: NextConfig = {
     // At the time of writing, Next.js doesn't inline critical-path CSS and
     // since there's so little CSS, we can inline it all.
     inlineCss: true,
-    typedRoutes: true,
   },
   output: "export",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   trailingSlash: true,
+  typedRoutes: true,
   webpack(config, context) {
     const fileLoaderRule = config.module.rules.find((rule: any) =>
       rule.test?.test?.(".svg"),
