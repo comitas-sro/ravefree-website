@@ -10,21 +10,21 @@ updates:
         update-types:
           - version-update:semver-patch
     groups:
-      mdx-js:
+      MDX:
         patterns:
           - '@mdx-js/*'
-      next:
+      Next.js:
         patterns:
           - '@next/*'
           - eslint-config-next
           - next
-      react:
+      React:
         patterns:
           - '@types/react'
           - '@types/react-dom'
           - react
           - react-dom
-      tailwindcss:
+      Tailwind CSS:
         patterns:
           - '@tailwindcss/*'
           - tailwindcss
