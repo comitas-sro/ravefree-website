@@ -8,6 +8,8 @@
  * Cancel out the styling with the "not-content" class
  */
 
+@reference "./globals.css";
+
 /* text coloring for most items */
 .markdown-content
   :not(

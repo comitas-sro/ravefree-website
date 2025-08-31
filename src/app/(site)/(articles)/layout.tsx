@@ -1,3 +1,5 @@
+import "../../styles/markdown-content.css";
+
 export default function Layout({
   children,
 }: Readonly<{

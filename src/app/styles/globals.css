@@ -5,8 +5,6 @@
  */
 @import "tailwindcss";
 
-@import "./markdown-content.css";
-
 @import "./tailwind-theme.css";
 
 @import "./buttons.css";
