@@ -1,14 +1,15 @@
+@reference "./globals.css";
+
 /**
- * Copied as is from the Astro Galaxy 6.2.2 theme
+ * Content below was copied as-is from Astro Galaxy theme v6.2.2.
  */
+
 /**
  * * general styling for any markdown rendered content
  *
  * Apply styling with the "markdown-content" class
  * Cancel out the styling with the "not-content" class
  */
-
-@reference "./globals.css";
 
 /* text coloring for most items */
 .markdown-content

@@ -1,6 +1,7 @@
 /**
- * Copied as is from the Astro Galaxy 6.2.2 theme
+ * Content below was copied as-is from Astro Galaxy theme v6.2.2.
  */
+
 /* buttons, 4 variants: "primary", "secondary", "outline", "ghost" */
 .button {
   @apply flex items-center justify-center rounded-md px-4 py-1 font-semibold;
