@@ -5,11 +5,6 @@ import type { NextConfig } from "next";
 import withExportImages from "next-export-optimize-images";
 
 const nextConfig: NextConfig = {
-  experimental: {
-    // At the time of writing, Next.js doesn't inline critical-path CSS and
-    // since there's so little CSS, we can inline it all.
-    inlineCss: true,
-  },
   output: "export",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   trailingSlash: true,

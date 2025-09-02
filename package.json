@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --no-lint && next-export-optimize-images",
+    "build": "next build --no-lint && ./inline-css.mjs && next-export-optimize-images",
     "start": "next start",
     "lint": "concurrently -m 1 'npm run lint:eslint' 'npm run lint:typescript'",
     "lint:eslint": "eslint --concurrency auto",
@@ -29,6 +29,7 @@
     "@types/node": "^24",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "beasties": "^0.3.5",
     "concurrently": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
