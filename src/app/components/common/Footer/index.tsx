@@ -34,7 +34,7 @@ export function Footer() {
             <p className="mt-6 mb-2 text-lg font-semibold">Follow Us</p>
             <div className="flex gap-2">
               <ExternalFooterLink
-                href="https://www.instagram.com/ravefree.sk?igsh=bGN2OXI1dmR1cDJs&utm_source=qr"
+                href="https://www.instagram.com/ravefree.eu/"
                 title="Instagram"
               >
                 <InstagramIcon />
