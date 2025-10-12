@@ -30,6 +30,7 @@ export default function Home() {
         width={600}
         height={600}
         className="m-auto"
+        poster={video_banner_fallback.src}
       >
         <source src={video_banner} type="video/webm" />
         <Image
