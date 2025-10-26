@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "code-quality": "concurrently -m 1 'npm run lint' 'npm run build'",
-    "dev": "next dev",
-    "build": "next build --no-lint && ./inline-css.mjs && next-export-optimize-images",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack && ./inline-css.mjs && next-export-optimize-images",
     "start": "next start",
     "lint": "concurrently -m 1 'npm run lint:eslint' 'npm run lint:typescript'",
     "lint:eslint": "eslint --concurrency auto",
@@ -43,5 +43,10 @@
     "prettier": "^3.7.4",
     "typescript": "^5",
     "wrangler": "^4.35.0"
+  },
+  "overrides": {
+    "next-export-optimize-images": {
+      "next": "^16"
+    }
   }
 }
