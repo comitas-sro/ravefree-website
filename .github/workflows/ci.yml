@@ -3,8 +3,8 @@ on:
   push:
 permissions: {}
 jobs:
-  build:
-    name: Build
+  code-quality:
+    name: Code Quality
     runs-on: ubuntu-24.04
     steps:
       - name: Check out the repository
@@ -28,32 +28,5 @@ jobs:
             ${{ runner.os }}-node-
       - name: Install dependencies
         run: npm ci
-      - name: Build
-        run: npm run build
-  lint:
-    name: Lint
-    runs-on: ubuntu-24.04
-    steps:
-      - name: Check out the repository
-        uses: actions/checkout@v5
-      - name: Set up Node.js
-        uses: actions/setup-node@v5
-        with:
-          node-version: 22
-      # https://github.com/actions/cache/blob/main/examples.md#node---npm
-      - name: Get npm cache directory
-        id: npm-cache-dir
-        run: |
-          echo "dir=$(npm config get cache)" >> "${GITHUB_OUTPUT}"
-      - name: Set up dependency cache
-        uses: actions/cache@v4
-        id: npm-cache
-        with:
-          path: ${{ steps.npm-cache-dir.outputs.dir }}
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Install dependencies
-        run: npm ci
-      - name: Lint
-        run: npm run lint
+      - name: Check code quality
+        run: npm run code-quality
