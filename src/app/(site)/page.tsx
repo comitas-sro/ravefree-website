@@ -5,7 +5,6 @@ import video_banner_fallback from "./video-banner-fallback.webp";
 import video_banner from "./video-banner.webm";
 import banner from "./banner.webp";
 import genesi from "./genesi.webp";
-import { SignUpForm } from "../components/common/SignUpForm";
 
 export const metadata: Metadata = {
   title: "Sign Up",
@@ -53,9 +52,7 @@ export default function Home() {
         <p className="text-[24px] leading-none mt-2">06/12/25</p>
         <p className="text-[39px] leading-none">A4 STUDIO</p>
         <p className="text-[18px] leading-none">BRATISLAVA SLOVAKIA</p>
-        <p className="text-[24px] leading-none mt-2">SIGN UP FOR FREE ENTRY</p>
       </div>
-      <SignUpForm />
     </div>
   );
 }
