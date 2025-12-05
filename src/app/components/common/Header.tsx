@@ -10,10 +10,10 @@ export function Header() {
               <ul className="flex h-full items-center">
                 <li className="w-full">
                   <Link
-                    href="/#tickets"
+                    href="/#sign-up"
                     className="hidden whitespace-nowrap md:flex button group button--primary"
                   >
-                    Tickets
+                    Sign Up for Free
                   </Link>
                 </li>
               </ul>
