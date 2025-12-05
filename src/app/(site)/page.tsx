@@ -50,7 +50,7 @@ export default function Home() {
       </div>
       <div id="tickets" className="max-w-sm m-auto text-center p-16">
         <a
-          href="https://goout.net/en/rave-free-genesi/szhnpxx/"
+          href="https://goout.net/en/tickets/rave-free-genesi/hragb/"
           target="_blank"
           rel="noopener noreferrer"
           className="button group button--primary h-12"
