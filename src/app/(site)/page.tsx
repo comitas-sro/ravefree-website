@@ -1,14 +1,9 @@
-import type { Metadata } from "next";
 import Image from "next-export-optimize-images/image";
 
 import video_banner_fallback from "./video-banner-fallback.webp";
 import video_banner from "./video-banner.webm";
 import banner from "./banner.webp";
 import genesi from "./genesi.webp";
-
-export const metadata: Metadata = {
-  title: "Sign Up",
-};
 
 export default function Home() {
   return (
