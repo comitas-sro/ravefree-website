@@ -55,7 +55,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="button group button--primary h-12"
         >
-          GARANTOVANÝ VSTUP
+          GUARANTEED ENTRY
         </a>
       </div>
     </div>
