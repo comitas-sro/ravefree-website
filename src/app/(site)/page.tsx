@@ -53,6 +53,16 @@ export default function Home() {
         <p className="text-[39px] leading-none">A4 STUDIO</p>
         <p className="text-[18px] leading-none">BRATISLAVA SLOVAKIA</p>
       </div>
+      <div id="tickets" className="max-w-sm m-auto text-center p-16">
+        <a
+          href="https://goout.net/en/rave-free-genesi/szhnpxx/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="button group button--primary h-12"
+        >
+          GARANTOVANÝ VSTUP
+        </a>
+      </div>
     </div>
   );
 }
