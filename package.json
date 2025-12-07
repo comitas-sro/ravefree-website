@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "code-quality": "concurrently -m 1 'npm run lint' 'npm run build'",
-    "dev": "next dev",
-    "build": "next build --no-lint && ./inline-css.mjs && next-export-optimize-images",
+    "dev": "next dev --webpack",
+    "build": "next build --webpack && ./inline-css.mjs && next-export-optimize-images",
     "start": "next start",
     "lint": "concurrently -m 1 'npm run lint:eslint' 'npm run lint:typescript'",
     "lint:eslint": "eslint --concurrency auto",
@@ -15,9 +15,9 @@
   "dependencies": {
     "@mdx-js/loader": "^3.1.1",
     "@mdx-js/react": "^3.1.1",
-    "@next/mdx": "^15.5.7",
+    "@next/mdx": "^16.0.7",
     "@types/mdx": "^2.0.13",
-    "next": "^15.5.7",
+    "next": "^16.0.7",
     "next-export-optimize-images": "^4.7.0",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
@@ -33,7 +33,7 @@
     "beasties": "^0.3.5",
     "concurrently": "^9.2.1",
     "eslint": "^9",
-    "eslint-config-next": "^15.5.7",
+    "eslint-config-next": "^16.0.7",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-mdx": "^3.6.2",
     "eslint-plugin-prettier": "^5.5.4",
@@ -43,5 +43,10 @@
     "prettier": "^3.7.4",
     "typescript": "^5",
     "wrangler": "^4.35.0"
+  },
+  "overrides": {
+    "next-export-optimize-images": {
+      "next": "^16"
+    }
   }
 }
