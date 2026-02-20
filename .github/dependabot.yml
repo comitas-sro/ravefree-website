@@ -14,34 +14,49 @@ updates:
     cooldown:
       default-days: 2
     open-pull-requests-limit: 10
+    allow:
+      - dependency-type: direct
     ignore:
-      - dependency-name: "*"
-        update-types:
-          - version-update:semver-patch
       # Major version must correspond with the used Node.js version.
       - dependency-name: "@types/node"
         update-types:
           - version-update:semver-major
-          - version-update:semver-patch
     groups:
+      all-direct:
+        patterns:
+          - "*"
+        update-types:
+          - patch
       mdx:
         patterns:
           - "@mdx-js/*"
+        update-types:
+          - major
+          - minor
       nextjs:
         patterns:
           - "@next/*"
           - eslint-config-next
           - next
+        update-types:
+          - major
+          - minor
       react:
         patterns:
           - "@types/react"
           - "@types/react-dom"
           - react
           - react-dom
+        update-types:
+          - major
+          - minor
       tailwindcss:
         patterns:
           - "@tailwindcss/*"
           - tailwindcss
+        update-types:
+          - major
+          - minor
     rebase-strategy: disabled
   - package-ecosystem: npm
     directory: /
@@ -50,14 +65,9 @@ updates:
     cooldown:
       default-days: 2
     allow:
-      - dependency-type: all
-    ignore:
-      - dependency-name: "*"
-        update-types:
-          - version-update:semver-major
-          - version-update:semver-minor
+      - dependency-type: indirect
     groups:
-      all-packages:
+      all-indirect:
         patterns:
           - "*"
     rebase-strategy: disabled
