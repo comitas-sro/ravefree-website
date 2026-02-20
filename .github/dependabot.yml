@@ -49,6 +49,8 @@ updates:
       interval: daily
     cooldown:
       default-days: 2
+    allow:
+      - dependency-type: all
     ignore:
       - dependency-name: "*"
         update-types:
