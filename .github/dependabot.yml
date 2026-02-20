@@ -4,11 +4,15 @@ updates:
     directory: /
     schedule:
       interval: daily
+    cooldown:
+      default-days: 2
     rebase-strategy: disabled
   - package-ecosystem: npm
     directory: /
     schedule:
       interval: daily
+    cooldown:
+      default-days: 2
     open-pull-requests-limit: 10
     ignore:
       - dependency-name: "*"
@@ -43,6 +47,8 @@ updates:
     directory: /
     schedule:
       interval: daily
+    cooldown:
+      default-days: 2
     ignore:
       - dependency-name: "*"
         update-types:
