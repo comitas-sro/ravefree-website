@@ -30,33 +30,21 @@ updates:
       mdx:
         patterns:
           - "@mdx-js/*"
-        update-types:
-          - major
-          - minor
       nextjs:
         patterns:
           - "@next/*"
           - eslint-config-next
           - next
-        update-types:
-          - major
-          - minor
       react:
         patterns:
           - "@types/react"
           - "@types/react-dom"
           - react
           - react-dom
-        update-types:
-          - major
-          - minor
       tailwindcss:
         patterns:
           - "@tailwindcss/*"
           - tailwindcss
-        update-types:
-          - major
-          - minor
     rebase-strategy: disabled
   - package-ecosystem: npm
     directory: /
