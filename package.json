@@ -46,6 +46,7 @@
   "overrides": {
     "next-export-optimize-images": {
       "next": "^16"
-    }
+    },
+    "postcss": "^8.5.10"
   }
 }
