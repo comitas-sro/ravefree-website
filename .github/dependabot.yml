@@ -48,6 +48,7 @@ updates:
           - "@tailwindcss/*"
           - tailwindcss
     rebase-strategy: disabled
+    versioning-strategy: increase
   - package-ecosystem: npm
     directory: /
     schedule:
