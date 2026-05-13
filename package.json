@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@next/mdx": "^16.2.3",
-    "next": "^16.2.3",
+    "next": "^16.2.6",
     "next-export-optimize-images": "^4.7.0",
     "typescript": "^5.9.3"
   },
