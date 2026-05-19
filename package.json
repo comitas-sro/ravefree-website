@@ -47,6 +47,11 @@
     "next-export-optimize-images": {
       "next": "^16"
     },
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "wrangler": {
+      "miniflare": {
+        "ws": "^8.20.1"
+      }
+    }
   }
 }
