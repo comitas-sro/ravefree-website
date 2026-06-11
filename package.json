@@ -44,6 +44,9 @@
     "wrangler": "^4.92.0"
   },
   "overrides": {
+    "concurrently": {
+      "shell-quote": "^1.8.4"
+    },
     "next-export-optimize-images": {
       "next": "^16"
     },
