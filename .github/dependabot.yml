@@ -24,11 +24,6 @@ updates:
         update-types:
           - version-update:semver-major
     groups:
-      all-direct:
-        patterns:
-          - "*"
-        update-types:
-          - patch
       mdx:
         patterns:
           - "@mdx-js/*"
