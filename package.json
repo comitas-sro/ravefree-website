@@ -29,7 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "beasties": "^0.4.2",
-    "concurrently": "^9.2.1",
+    "concurrently": "^10.0.3",
     "eslint": "^10",
     "eslint-config-next": "^16.2.6",
     "eslint-config-prettier": "^10.1.8",
@@ -44,9 +44,6 @@
     "wrangler": "^4.92.0"
   },
   "overrides": {
-    "concurrently": {
-      "shell-quote": "^1.8.4"
-    },
     "next-export-optimize-images": {
       "next": "^16"
     },
