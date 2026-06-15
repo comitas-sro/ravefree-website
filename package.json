@@ -33,7 +33,7 @@
     "eslint": "^10",
     "eslint-config-next": "^16.2.6",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-mdx": "^3.7.0",
+    "eslint-plugin-mdx": "^3.8.1",
     "eslint-plugin-prettier": "^5.5.5",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^11.2.0",
