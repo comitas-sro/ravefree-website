@@ -47,18 +47,12 @@
     "next-export-optimize-images": {
       "next": "^16"
     },
-    "postcss": "^8.5.10",
-    "wrangler": {
-      "esbuild": "~0.28.1",
-      "miniflare": {
-        "ws": "^8.21.0"
-      }
-    }
+    "postcss": "^8.5.10"
   },
   "allowScripts": {
     "esbuild@0.28.1": true,
     "sharp@0.34.5": true,
     "unrs-resolver@1.11.1": true,
-    "workerd@1.20260515.1": true
+    "workerd@1.20260617.1": true
   }
 }
