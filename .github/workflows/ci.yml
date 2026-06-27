@@ -21,7 +21,7 @@ jobs:
         run: |
           echo "dir=$(npm config get cache)" >> "${GITHUB_OUTPUT}"
       - name: Set up dependency cache
-        uses: actions/cache@v6
+        uses: actions/cache@v6.1.0
         id: npm-cache
         with:
           path: ${{ steps.npm-cache-dir.outputs.dir }}
