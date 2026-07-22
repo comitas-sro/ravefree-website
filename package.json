@@ -47,7 +47,8 @@
     "next-export-optimize-images": {
       "next": "^16"
     },
-    "postcss": "^8.5.10"
+    "postcss": "^8.5.10",
+    "sharp": "~0.35.0"
   },
   "allowScripts": {
     "esbuild@0.28.1": true,
