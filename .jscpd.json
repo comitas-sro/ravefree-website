@@ -1,0 +1,10 @@
+{
+  "absolute": true,
+  "gitignore": true,
+  "ignore": [
+    "/package.json",
+    "/package-lock.json"
+  ],
+  "reporters": ["consoleFull"],
+  "threshold": 0
+}
