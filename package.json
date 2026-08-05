@@ -47,6 +47,9 @@
     "concurrently": {
       "shell-quote": "^1.9.0"
     },
+    "miniflare": {
+      "undici": "^7.29.0"
+    },
     "next-export-optimize-images": {
       "next": "^16"
     },
