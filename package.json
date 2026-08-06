@@ -13,8 +13,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next/mdx": "^16.2.12",
-    "next": "^16.2.12",
+    "@next/mdx": "^16.3.0",
+    "next": "^16.3.0",
     "next-export-optimize-images": "^4.7.0",
     "typescript": "^6.0.3"
   },
@@ -31,7 +31,7 @@
     "beasties": "^0.4.2",
     "concurrently": "^10.0.3",
     "eslint": "^10",
-    "eslint-config-next": "^16.2.12",
+    "eslint-config-next": "^16.3.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-mdx": "^3.8.1",
     "eslint-plugin-prettier": "^5.5.5",
@@ -48,12 +48,12 @@
       "shell-quote": "^1.9.0"
     },
     "miniflare": {
+      "sharp": "^0.35.0",
       "undici": "^7.29.0"
     },
     "next-export-optimize-images": {
-      "next": "^16"
-    },
-    "postcss": "^8.5.18",
-    "sharp": "~0.35.0"
+      "next": "^16",
+      "sharp": "^0.35.0"
+    }
   }
 }
