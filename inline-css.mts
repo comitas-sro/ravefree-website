@@ -2,7 +2,19 @@
 
 import fs from "fs/promises";
 
-import Beasties from "beasties";
+import { default as _Beasties } from "beasties";
+
+class Beasties extends _Beasties {
+  override async getCssAsset(
+    href: string,
+    _style: Node,
+  ): Promise<string | undefined> {
+    const css = await super.getCssAsset(href, _style);
+
+    // https://github.com/danielroe/beasties/issues/390
+    return css?.replaceAll(/(?<=\burl\()..(?=\/media\/)/g, "/_next/static");
+  }
+}
 
 const beasties = new Beasties({
   inlineFonts: true, // Next.js does this with inlineCss.
