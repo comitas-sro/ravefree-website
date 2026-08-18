@@ -2,9 +2,12 @@ import path from "node:path";
 
 import createMDX from "@next/mdx";
 import type { NextConfig } from "next";
-import withExportImages from "next-export-optimize-images";
 
 const nextConfig: NextConfig = {
+  images: {
+    // Optimization is unsupported for `output: 'export'`.
+    unoptimized: true,
+  },
   output: "export",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   trailingSlash: true,
@@ -71,4 +74,4 @@ const withMDX = createMDX({
   extension: /\.mdx?$/,
 });
 
-export default withExportImages(withMDX(nextConfig));
+export default withMDX(nextConfig);

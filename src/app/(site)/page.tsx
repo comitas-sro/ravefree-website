@@ -1,4 +1,4 @@
-import Image from "next-export-optimize-images/image";
+import Image from "next/image";
 
 import video_banner_fallback from "./video-banner-fallback.webp";
 import video_banner from "./video-banner.webm";
@@ -11,7 +11,6 @@ export default function Home() {
       <Image
         className="max-w-sm m-auto px-14"
         fetchPriority="high"
-        layout="responsive"
         loading="eager"
         src={banner}
         alt="RAVE FREE"
@@ -29,7 +28,6 @@ export default function Home() {
         <Image
           className="max-w-sm m-auto px-14"
           fetchPriority="high"
-          layout="responsive"
           loading="eager"
           src={video_banner_fallback}
           alt="RF"
@@ -38,7 +36,6 @@ export default function Home() {
       <Image
         className="max-w-sm m-auto px-16"
         fetchPriority="high"
-        layout="responsive"
         loading="eager"
         src={genesi}
         alt="GENESI[IT]"
