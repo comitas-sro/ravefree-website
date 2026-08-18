@@ -15,7 +15,7 @@
   "dependencies": {
     "@next/mdx": "^16.3.0",
     "next": "^16.3.0",
-    "next-export-optimize-images": "^4.7.0",
+    "next-export-optimize-images": "npm:@elliott-w/next-export-optimize-images@^4.8.1",
     "typescript": "^6.0.3"
   },
   "devDependencies": {
@@ -52,7 +52,6 @@
       "undici": "^7.29.0"
     },
     "next-export-optimize-images": {
-      "next": "^16",
       "sharp": "^0.35.0"
     }
   }
