@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build --webpack && ./inline-css.mts && next-export-optimize-images",
+    "build": "next build && ./inline-css.mts && next-export-optimize-images",
     "code-quality": "concurrently -m 1 'npm run lint' 'npm run build'",
-    "dev": "next dev --webpack",
+    "dev": "next dev",
     "format": "prettier --write .",
     "lint": "concurrently -m 1 'npm run lint:eslint' 'npm run lint:typescript'",
     "lint:eslint": "eslint --concurrency auto",

@@ -8,6 +8,22 @@ const nextConfig: NextConfig = {
   output: "export",
   pageExtensions: ["js", "jsx", "md", "mdx", "ts", "tsx"],
   trailingSlash: true,
+  turbopack: {
+    rules: {
+      "*.svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.js",
+        condition: {
+          not: {
+            query: /url/,
+          },
+        },
+      },
+      "*.webm": {
+        type: "asset",
+      },
+    },
+  },
   typedRoutes: true,
   webpack(config, context) {
     const fileLoaderRule = config.module.rules.find(
