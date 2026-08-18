@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build": "next build --webpack && ./inline-css.mjs && next-export-optimize-images",
+    "build": "next build --webpack && ./inline-css.mts && next-export-optimize-images",
     "code-quality": "concurrently -m 1 'npm run lint' 'npm run build'",
     "dev": "next dev --webpack",
     "format": "prettier --write .",
