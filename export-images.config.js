@@ -1,6 +1,8 @@
 /**
  * @type {import('next-export-optimize-images').Config}
  */
-const config = {};
+const config = {
+  imageDir: ".",
+};
 
 module.exports = config;
