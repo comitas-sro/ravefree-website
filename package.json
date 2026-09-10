@@ -48,11 +48,8 @@
       "shell-quote": "^1.9.0"
     },
     "miniflare": {
-      "sharp": "^0.35.0",
       "undici": "^7.29.0"
     },
-    "next-export-optimize-images": {
-      "sharp": "^0.35.0"
-    }
+    "sharp": "^0.35.4"
   }
 }
