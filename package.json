@@ -50,6 +50,8 @@
     "miniflare": {
       "undici": "^7.30.1"
     },
-    "sharp": "^0.35.5"
+    "next-export-optimize-images": {
+      "sharp": "^0.35.5"
+    }
   }
 }
