@@ -44,9 +44,6 @@
     "wrangler": "^4.152.0"
   },
   "overrides": {
-    "concurrently": {
-      "shell-quote": "^1.11.0"
-    },
     "miniflare": {
       "undici": "^7.30.1"
     },
