@@ -29,7 +29,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "beasties": "^0.5.5",
-    "concurrently": "^10.0.3",
+    "concurrently": "^10.0.6",
     "eslint": "^10",
     "eslint-config-next": "^16.4.3",
     "eslint-config-prettier": "^10.1.8",
