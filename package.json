@@ -13,8 +13,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@next/mdx": "^16.4.3",
-    "next": "^16.4.3",
+    "@next/mdx": "^16.4.5",
+    "next": "^16.4.5",
     "next-export-optimize-images": "npm:@elliott-w/next-export-optimize-images@^4.8.1",
     "typescript": "^6.0.3"
   },
@@ -31,7 +31,7 @@
     "beasties": "^0.5.5",
     "concurrently": "^10.0.6",
     "eslint": "^10",
-    "eslint-config-next": "^16.4.3",
+    "eslint-config-next": "^16.4.5",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-mdx": "^3.9.0",
     "eslint-plugin-prettier": "^5.5.7",
