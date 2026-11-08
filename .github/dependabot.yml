@@ -38,10 +38,6 @@ updates:
           - "@types/react-dom"
           - react
           - react-dom
-      tailwindcss:
-        patterns:
-          - "@tailwindcss/*"
-          - tailwindcss
     rebase-strategy: disabled
     versioning-strategy: increase
   - package-ecosystem: npm
