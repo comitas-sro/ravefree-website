@@ -37,7 +37,7 @@
     "eslint-plugin-prettier": "^5.5.7",
     "postcss-flexbugs-fixes": "^5.0.2",
     "postcss-preset-env": "^11.6.2",
-    "prettier": "^3.9.10",
+    "prettier": "^3.10.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "wrangler": "^4.158.0"
