@@ -23,6 +23,11 @@ updates:
       - dependency-name: "@types/node"
         update-types:
           - version-update:semver-major
+      # typescript-eslint does not support TS 7.0.
+      # https://github.com/typescript-eslint/typescript-eslint/issues/10940
+      - dependency-name: typescript
+        versions:
+          - "~7.0.0"
     groups:
       mdx:
         patterns:
